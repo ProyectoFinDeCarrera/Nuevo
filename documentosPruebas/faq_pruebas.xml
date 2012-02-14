@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<faqFile language="en" filename="/tmp/faq_pruebas.xml">
+    <faqs>
+        <faq id="1">
+            <question>How Do I Remove (or Change) the Colors in the ls Display?</question>
+            <answer>If ls is displaying in color and you haven't told it to, you probably have an alias configured for it. Some distributions ship this way by default.
+The shell command, unalias ls, should completely unset the configuration that some distributions provide as standard.
+To permanently make this change, check your initialization script, .bashrc.</answer>
+        </faq>
+        <faq id="2">
+            <question>Why Won't a Program Work in the Current Directory?</question>
+            <answer>Because the current directory (i.e., .) is not in the search path, for security reasons, as well as to insure that the correct program versions are used. If an intruder is able to write a file to a world-writable directory, like /tmp, presumably he or she would be able to execute it if the directory were in the search path. The solution to this is to include the directory in the command; e.g., ./myprog, instead of myprog. Or add the current directory to your PATH environment variable; e.g., export PATH=&quot;.:&quot;$PATH using bash, although this is discouraged for the reasons mentioned above. </answer>
+        </faq>
+        <faq id="3">
+            <question>How Do I Find Out If a Notebook Runs Linux?</question>
+            <answer>There's no fixed answer to this question, because notebook hardware is constantly updated, and getting the X display, sound, PCMCIA, modem, and so forth, working, can take a good deal of effort.
+Most notebooks currently on the market, for example, use &quot;Winmodems,&quot; which often do not work with Linux because of their proprietary hardware interfaces. Even notebooks which are certified as &quot;Linux compatible,&quot; may not be completely compatible.</answer>
+        </faq>
+        <faq id="4">
+            <question>Can Can I Resume an Interrupted Download?</question>
+            <answer> You can use the reget command of the standard ftp client program after reconnecting to pick up where you left off.
+Clients like ncftp support resumed FTP downloads, and wget supports resumed FTP and HTTP downloads. </answer>
+        </faq>
+    </faqs>
+</faqFile>
